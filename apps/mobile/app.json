@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "ELBER MARKET",
+    "slug": "elber-market",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "elbermarket",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#003614"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.elbermarket.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "ELBER MARKET uses your location to auto-fill pickup and destination coordinates when creating transport requests."
+      }
+    },
+    "android": {
+      "package": "com.elbermarket.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#003614"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-secure-store",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow ELBER MARKET to use your location to auto-fill trip details."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow ELBER MARKET to access your photos to upload verification documents.",
+          "cameraPermission": "Allow ELBER MARKET to use your camera to take verification document photos."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

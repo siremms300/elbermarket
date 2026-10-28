@@ -1,0 +1,12 @@
+{
+  "name": "elbermarket",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "mobile": "cd apps/mobile && npm start",
+    "mobile:install": "cd apps/mobile && npm install"
+  }
+}
